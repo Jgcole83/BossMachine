@@ -15,8 +15,8 @@ app.use(cors({
   allowedHeaders: '*' // Allow all headers
 }));
 
-// Mounting apiRouter at the '/api' path
-app.use('/api', apiRouter);
+// Use the apiRouter for routes starting with /api
+app.use('/api', apiRouter);  // This will now route API requests to your defined routes
 
 const PORT = process.env.PORT || 4001;
 app.listen(PORT, () => {

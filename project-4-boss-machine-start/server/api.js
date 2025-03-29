@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../db');  // Import the helper functions from db.js
+const db = require('./db');
 
 // /api/minions Routes
 router.get('/minions', (req, res) => {
